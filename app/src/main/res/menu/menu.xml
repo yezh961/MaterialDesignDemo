@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--最好别设置setSupportActionBar-->
+    <!--title长按会出现 -->
+    <!--navigationIcon 最左側图标 -->
+    <!--app:showAsAction 有以下三个属性：
+        ifRoom 表示在屏幕空间足够的情况下显示在Toolbar中，不够的话就显示在菜单中
+        never 表示永远不显示在Toolbar中，而是一直显示在菜单中
+        always 表示永远显示在Toolbar中，如果屏幕空间不够则不显示
+        -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@mipmap/ic_delete_white_24dp"
+        android:title="notifications"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        android:title="@mipmap/action_settings"
+        app:showAsAction="ifRoom" />
+</menu>
